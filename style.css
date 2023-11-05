@@ -78,8 +78,8 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
-    background: green;
+    color: white !important;
+    background: green !important;
     text-transform: uppercase;
 }
 
@@ -186,14 +186,34 @@ button:hover{
     background-image: url(img/p1.jpg);
     background-size: cover;
 }
+.titulos{
+    color: white;
+    margin-bottom: 100px;
+    width: 80%;
+}
+.titulo2{
+    font-size: 20px;
+}
+.titulo3{
+    opacity: 70%;
+    text-decoration:dotted;
+}
+.nome{
+    background-image: linear-gradient(45deg,orange,white,pink,purple);
+    background-clip:text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 20px;
 
-
+}
 
 @media (max-width:1000px){
     
     .caixa-p{
         width: 100%;
         height: 100vh;
+        overflow-y: hidden;
         
         
     }
@@ -201,10 +221,22 @@ button:hover{
         /* border: 5px solid red; */
         display: flex;
         height: 100%;
+        display: flex;
         
+        
+    }
+    .table-port{
+        width: 90%;
+        height: 70%;
+        overflow-y: scroll;
+        justify-content: center;
+        /* border: 1px solid red; */
+        align-items: center;
     }
     .lista{
         width: 90%;
+        margin: 25px;
+        
     }
     .botoes-superior{
         display: flex;
